@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">exam</string>
+    <string name="title_activity_icon">icon</string>
+    <string name="title_activity_listview">listview</string>
+    <string name="password">Password</string>
+    <string name="hello_my_app">Hello my app</string>
+    <string name="sign_in">Sign in</string>
+    <string name="img_home">img_home</string>
+    <string name="name">Name</string>
+    <string name="toolBar_text">My ListView</string>
+    <string name="background">background</string>
+    <string name="demo_text">demo text</string>
+    <string name="banner">banner</string>
+    <string name="my_app">My App</string>
+    <string name="version_12_0_0">version 12.0.0</string>
+    <string name="by_praewpun">by PRAEWPUN</string>
+</resources>

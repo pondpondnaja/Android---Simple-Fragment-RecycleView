@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/login_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img_app_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/img_home"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="153dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/img_app_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/hello_my_app"
+            android:textAlignment="center"
+            android:textColor="@color/all_text_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:autofillHints="@string/password"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="@string/sign_in" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
